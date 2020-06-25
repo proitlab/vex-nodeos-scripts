@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+WORKDIR=./
+NODEOS=${WORKDIR}/nodeos
+
+
+NODEOSPID=`ps -ef | grep ${NODEOS} | grep -v grep | grep -v killnodes | awk '{print $2}'`
+
+printf "Killing nodeos PID ${NODEOSPID}"
+
+kill ${NODEOSPID}
+
+ISNODEOS=`ps -ef | grep ${NODEOS} | grep -v grep | wc -l`
+
+while [ ${ISNODEOS} -eq 1 ]
+do
+   printf "."
+   sleep 1
+   ISNODEOS=`ps -ef | grep ${NODEOS} | grep -v grep | wc -l`
+done
+
+printf "Fin\n"
