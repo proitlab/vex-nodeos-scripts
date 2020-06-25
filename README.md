@@ -8,6 +8,12 @@ Reference to: https://belajar.vexanium.com/article/command-umum-blockproducer/
 
 This is just simple bash script to easily manage Vexanium nodeos by utilizing config.ini
 
+## Features
+
+- Enforce user to not using superuser/root to run the command
+- Utilizing config.ini for better security (Hide the private key)
+- Kill nodeos gracefully to prevent data block corrupt
+
 ## Starting Node 
 
     ./startnode.ds 
