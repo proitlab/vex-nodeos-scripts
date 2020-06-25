@@ -8,6 +8,11 @@ Reference to: https://belajar.vexanium.com/article/command-umum-blockproducer/
 
 This is just simple bash script to easily manage Vexanium nodeos by utilizing config.ini
 
-#Starting Node 
+## Starting Node 
 
     ./startnode.ds 
+
+
+## Stopping Node
+
+    ./killnode.ds
