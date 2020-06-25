@@ -3,6 +3,8 @@
 WORKDIR=./
 NODEOS=${WORKDIR}/nodeos
 
+cd ${WORKDIR}
+
 ${NODEOS} --max-irreversible-block-age -1 --contracts-console --genesis-json ./genesis.json \
 --blocks-dir ./data/blocks --data-dir ./data --config-dir ./ > ${WORKDIR}/nodeos.log 2>&1 &
 
