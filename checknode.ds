@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+WORKDIR=./
+NODEOS=${WORKDIR}/nodeos
+STARTNODE=${WORKDIR}/startnode.ds
+
+
+NODEOSPID=`ps -ef | grep ${NODEOS} | grep -v grep | grep -v checknode | awk '{print $2}'`
+
+if [ "x${NODEOSPID}" == "x" ]
+then
+	${STARTNODE}
+else
+	echo "Node is running with PID ${NODEOSPID}"
+fi
+
