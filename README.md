@@ -23,3 +23,8 @@ This is just simple bash script to easily manage Vexanium nodeos by utilizing co
 ## Stopping Node
 
     ./killnode.ds
+
+
+## Checking Node
+
+    ./checknode.ds
