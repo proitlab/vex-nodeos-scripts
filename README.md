@@ -19,15 +19,23 @@ This is just simple bash script to easily manage Vexanium nodeos by utilizing co
 
 1. Clone github vex-nodes-scripts
 
-   git clone https://github.com/proitlab/vex-nodeos-scripts
+    git clone https://github.com/proitlab/vex-nodeos-scripts
 
 2. Copy scripts to nodeos directory
 
-   cp vex-nodeos-scripts/* .
+    cp vex-nodeos-scripts/* .
 
 3. Edit config.ini
-4. ./startnode.ds
-5. ./checknode.ds
+
+    nano config.ini 
+
+4. Start nodeos
+
+    ./startnode.ds
+
+5. Check Nodes 
+
+    ./checknode.ds
 
 ## Starting Node 
 
