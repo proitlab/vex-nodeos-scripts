@@ -3,20 +3,20 @@
 WORKDIR=./
 RUNNODE=${WORKDIR}/runnode.ds
 WHOAMI=`whoami`
-USERTORUN=vexanium	# Change this to your username
+#USERTORUN=vexanium	# Change this to your username
 
 cd ${WORKDIR}
 
-if [ ${WHOAMI} == "root" ]
-then
+#if [ ${WHOAMI} == "root" ]
+#then
 
-   sudo -u i${USERTORUN} ${RUNNODE}
+#   sudo -u i${USERTORUN} ${RUNNODE}
 
-else
+#else
 
    ${RUNNODE}
 
-fi
+#fi
 
 echo "NodeOS is starting"
 echo "=================="
