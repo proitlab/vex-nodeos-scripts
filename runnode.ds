@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WORKDIR=./
+WORKDIR=.
 NODEOS=${WORKDIR}/nodeos
 
 cd ${WORKDIR}
