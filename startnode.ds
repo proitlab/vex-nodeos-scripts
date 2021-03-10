@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WORKDIR=./
+WORKDIR=.
 RUNNODE=${WORKDIR}/runnode.ds
 WHOAMI=`whoami`
 #USERTORUN=vexanium	# Change this to your username
